@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&display=swap');
+body{
+    position: relative;
+    
+}
+nav{
+    position: sticky;
+    
+}
+nav img{
+    position: sticky;
+    left: 30px;
+    top: 15px;
+    display: inline;
+}
+nav ul{
+    position: absolute;
+    top: 15px;
+    left:60%;
+    
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #181818; /* Set the color as needed */
+    text-decoration: none;
+    position: sticky;
+    justify-content: space-between;
+    gap: 20px;
+}
+nav ul li:hover{
+    color:#46973e ;
+    border-bottom: 1px solid #46973e;
+    line-height: 1.5; 
+}
+.home {
+        color: #46973e;
+        border-bottom: 1px solid #46973e;
+        line-height: 1.5; /* Adjust the value based on your preference */
+    }
+    
+
+button {
+    background-color: #187c0f;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #187c0f;
+    color: white;
+    border-color: white;
+    text-decoration: none;
+}
+.popup {
+    background-color: #dee6e15d;
+    width: 450px;
+    padding: 20px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 15%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    z-index: 99999;
+}
+
+.popup h2 {
+    margin-top: -19px;
+}
+
+.popup button {
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+
+
+.popup p {
+    font-size: 10px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.let a {
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #fcfdff;
+    color: #d8cbcb;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+#signin-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button.popup-submit {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.popup-submit:hover {
+    background-color: #45a049;
+}
+
+a.let {
+    text-decoration: none;
+    color: inherit;
+}
+.hero {
+    margin-bottom: 0%;
+}
+.hero img{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    width: 30%;
+    height: 70vh;
+    gap: 20px;
+}
+.hero img:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.hero span{
+    position: relative;
+    top: -290px;
+    right: -42%;
+    font-size: 150px;
+    color: white;
+}
+.hero span:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.home1{
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.home1:hover {
+    transform: scale(1.02);
+    background-color: #e0e0e0;
+}
+footer {
+    background-color: #05ac0a; /* Green color */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    .hero{
+        display:none;
+
+        
+    }
+    #about{
+        margin-top: 10vh;
+    }
+    
+    nav ul,li{
+        display: flex;
+        margin-top: 6vh;
+        margin-left: -33vw;
+        gap: 20vw;
+
+    }  
+    body{
+        position: relative;
+    }
+    #openPopup{
+       position: absolute;
+       top: -12vh;
+       left: -29vw;
+    }
+  
+  }

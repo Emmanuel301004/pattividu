@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Patti Vidu Restaurant</title>
+    <style>
+            body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+a{
+    color: rgb(124, 120, 120);
+}
+        header {
+            background-color: #05ac0a;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .header-text{
+            margin-right: 0VH;
+        }
+
+        nav {
+            background-color: #246427;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+      
+
+        section {
+            padding: 2em;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color:#05ac0a;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1em;
+        }
+        .Featured{
+            padding-bottom: 100px;
+        }
+
+        
+        .contact-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #05ac0a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #246427;
+        }
+        footer {
+            background-color: #05ac0a; /* Green color */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            
+            
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-text">
+        <h1>Patti Vidu Restaurant</h1>
+        <p>Eat well and Have A Healthy Weight Gain</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="index.html#about">About Us</a>
+    <a href="registration.html">services</a> <!-- Link to your contact page -->
+</nav>
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you!</p>
+    <p>Fill out the form below, and we'll get back to you as soon as possible.</p>
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" onclick="handleSubmit()" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Patti Vidu Restaurant. All rights reserved.</p>
+</footer>
+<script>
+ function handleSubmit() {
+        // Show alert when form is submitted
+        alert("Your message has been submitted. We'll get back to you shortly.");
+        return true; // Allow form submission to continue
+    }
+</script>
+</body>
+</html>
